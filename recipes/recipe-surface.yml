@@ -1,0 +1,44 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/fotnite-vevo/bluefin
+name: bluefin
+# description will be included in the image's metadata
+description: fotnite-vevo's personal Bluefin image.
+
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: stable # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - type: rpm-ostree
+    repos:
+      - https://pkg.surfacelinux.com/fedora/linux-surface.repo
+    replace:
+      - https://github.com/linux-surface/linux-surface/releases/download/silverblue-20201215-1/kernel-20201215-1.x86_64.rpm
+    remove:
+      - kernel-core
+      - kernel-modules
+      - kernel-modules-extra
+      - libwacom
+      - libwacom-data
+    install:
+      - kernel-surface
+      - iptsd
+      - libwacom-surface
+      - libwacom-surface-data
+
+  - type: rpm-ostree
+    install:
+      - gnome-backgrounds-extras
+      - neovim
+    remove:
+      - gnome-tour
+      - solaar
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
