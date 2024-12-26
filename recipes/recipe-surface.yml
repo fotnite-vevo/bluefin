@@ -21,15 +21,14 @@ modules:
     replace:
       - from-repo: https://pkg.surfacelinux.com/fedora/linux-surface.repo
         packages:
-          - https://github.com/linux-surface/linux-surface/releases/download/silverblue-20201215-1/kernel-20201215-1.x86_64.rpm
+          - kernel
+	  - kernel-core
+	  - kernel-modules
+	  - kernel-modules-extra
     remove:
-      - kernel-core
-      - kernel-modules
-      - kernel-modules-extra
       - libwacom
       - libwacom-data
     install:
-      - kernel-surface
       - iptsd
       - libwacom-surface
       - libwacom-surface-data
