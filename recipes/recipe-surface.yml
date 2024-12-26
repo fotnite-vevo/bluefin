@@ -21,7 +21,10 @@ modules:
     replace:
       - from-repo: linux-surface
         packages:
-          - kernel
+          - kernel-surface
+          - kernel-surface-core
+          - kernel-surface-modules
+          - kernel-surface-modules-extra
     remove:
       - libwacom
       - libwacom-data
