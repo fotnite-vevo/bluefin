@@ -19,7 +19,7 @@ modules:
     repos:
       - https://pkg.surfacelinux.com/fedora/linux-surface.repo
     replace:
-      - from-repo: linux-surface
+      - from-repo: https://pkg.surfacelinux.com/fedora/linux-surface.repo
         packages:
           - kernel-surface
           - kernel-surface-core
