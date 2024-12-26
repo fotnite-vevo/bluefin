@@ -21,11 +21,11 @@ modules:
     replace:
       - from-repo: https://pkg.surfacelinux.com/fedora/linux-surface.repo
         packages:
-          - kernel-surface-6.11.11-1.surface
-          - kernel-surface-core-6.11.11-1.surface
-          - kernel-surface-modules-6.11.11-1.surface
-          - kernel-surface-modules-core-6.11.11-1.surface
-          - kernel-surface-modules-extra-6.11.11-1.surface
+          - kernel-surface-6.11.11-1
+          - kernel-surface-core-6.11.11-1
+          - kernel-surface-modules-6.11.11-1
+          - kernel-surface-modules-core-6.11.11-1
+          - kernel-surface-modules-extra-6.11.11-1
     remove:
       - libwacom
       - libwacom-data
