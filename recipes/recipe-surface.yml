@@ -22,9 +22,9 @@ modules:
       - from-repo: https://pkg.surfacelinux.com/fedora/linux-surface.repo
         packages:
           - kernel
-	  - kernel-core
-	  - kernel-modules
-	  - kernel-modules-extra
+          - kernel-core
+          - kernel-modules
+          - kernel-modules-extra
     remove:
       - libwacom
       - libwacom-data
