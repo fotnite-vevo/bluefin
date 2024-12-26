@@ -15,17 +15,14 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: script
+    scripts:
+      - surface-kernel.sh
+
   - type: rpm-ostree
     repos:
       - https://pkg.surfacelinux.com/fedora/linux-surface.repo
-    replace:
-      - from-repo: https://pkg.surfacelinux.com/fedora/linux-surface.repo
-        packages:
-          - kernel-surface-6.11.11-1
-          - kernel-surface-core-6.11.11-1
-          - kernel-surface-modules-6.11.11-1
-          - kernel-surface-modules-core-6.11.11-1
-          - kernel-surface-modules-extra-6.11.11-1
     remove:
       - libwacom
       - libwacom-data
