@@ -11,4 +11,9 @@ rpm-ostree override replace --experimental --from repo='linux-surface' \
   kernel-surface-core \
   kernel-surface-modules \
   kernel-surface-modules-core \
-  kernel-surface-modules-extra
+  kernel-surface-modules-extra \
+  --remove kernel \
+  --remove kernel-core \
+  --remove kernel-modules \
+  --remove kernel-modules-core \
+  --remove kernel-modules-extra
