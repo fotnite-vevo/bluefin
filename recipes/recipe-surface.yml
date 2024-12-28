@@ -70,8 +70,8 @@ modules:
         - io.missioncenter.MissionCenter
         - org.mozilla.firefox
         - org.mozilla.Thunderbird
-        - org.gtk.Gtk3theme.adw-gtk3//3.22
-        - org.gtk.Gtk3theme.adw-gtk3-dark//3.22
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
 
         - io.github.celluloid_player.Celluloid
         - io.github.neithern.g4music
