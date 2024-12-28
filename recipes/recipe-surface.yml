@@ -43,7 +43,7 @@ modules:
     notify: true
     system:
       install:
-        - io.github.dviv.boxbuddyrs
+        - io.github.dvlv.boxbuddyrs
         - com.github.rafostar.Clapper
         - org.fedoraproject.MediaWriter
         - com.github.tchx84.Flatseal
