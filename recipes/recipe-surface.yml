@@ -26,11 +26,17 @@ modules:
     remove:
       - libwacom
       - libwacom-data
+      - kmod-xpadneo
+      - kernel-uki-virt
+      - kernel
+      - kernel-core
+      - kernel-modules
+      - kernel-modules-core
+      - kernel-modules-extra
     install:
       - iptsd
       - libwacom-surface
       - libwacom-surface-data
-      - kernel-surface-default-watchdog
 
   - type: rpm-ostree
     install:
