@@ -13,13 +13,3 @@ rpm-ostree override replace --experimental --from repo='linux-surface' \
   kernel-surface-modules-core \
   kernel-surface-modules-extra \
   kernel-surface-devel
-# --remove kernel \
-# --remove kernel-core \
-# --remove kernel-modules \
-# --remove kernel-modules-core \
-# --remove kernel-modules-extra \
-# --remove kernel-devel-matched \
-# --remove kmod-xpadneo
-
-# Build kmods
-akmods --force
