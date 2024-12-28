@@ -30,6 +30,7 @@ modules:
       - iptsd
       - libwacom-surface
       - libwacom-surface-data
+      - kernel-surface-default-watchdog
 
   - type: rpm-ostree
     install:
