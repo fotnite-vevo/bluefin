@@ -42,6 +42,9 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub"
       install:
         - io.github.dvlv.boxbuddyrs
         - com.github.rafostar.Clapper
