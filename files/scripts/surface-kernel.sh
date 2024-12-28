@@ -5,6 +5,9 @@ set -oue pipefail
 curl -Lo /etc/yum.repos.d/linux-surface.repo \
   https://pkg.surfacelinux.com/fedora/linux-surface.repo
 
+# Remove kmods
+rpm-ostree override remove $(rpm -qa | grep kmod)
+
 # Add surface kernel
 rpm-ostree override replace --experimental --from repo='linux-surface' \
   kernel-surface \
@@ -13,6 +16,3 @@ rpm-ostree override replace --experimental --from repo='linux-surface' \
   kernel-surface-modules-core \
   kernel-surface-modules-extra \
   kernel-surface-devel
-
-# Set default kernel
-linux-surface-default-watchdog.py
