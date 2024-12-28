@@ -13,3 +13,6 @@ rpm-ostree override replace --experimental --from repo='linux-surface' \
   kernel-surface-modules-core \
   kernel-surface-modules-extra \
   kernel-surface-devel
+
+# Set default kernel
+linux-surface-default-watchdog.py
