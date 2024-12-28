@@ -27,7 +27,6 @@ modules:
       - libwacom
       - libwacom-data
       - kmod-xpadneo
-      - kernel-uki-virt
       - kernel
       - kernel-core
       - kernel-modules
