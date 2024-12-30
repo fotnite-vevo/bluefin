@@ -16,10 +16,6 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # - type: script
-  #   scripts:
-  #     - surface-kernel.sh
-
   # - type: rpm-ostree
   #   repos:
   #     - https://pkg.surfacelinux.com/fedora/linux-surface.repo
@@ -76,6 +72,10 @@ modules:
         - io.github.celluloid_player.Celluloid
         - com.github.neithern.g4music
         - net.nokyan.Resources
+
+  - type: script
+    scripts:
+      - surface-kernel.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
