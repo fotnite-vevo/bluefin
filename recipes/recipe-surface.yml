@@ -20,16 +20,16 @@ modules:
     scripts:
       - surface-kernel.sh
 
-  - type: rpm-ostree
-    repos:
-      - https://pkg.surfacelinux.com/fedora/linux-surface.repo
-    remove:
-      - libwacom
-      - libwacom-data
-    install:
-      - iptsd
-      - libwacom-surface
-      - libwacom-surface-data
+  # - type: rpm-ostree
+  #   repos:
+  #     - https://pkg.surfacelinux.com/fedora/linux-surface.repo
+  #   remove:
+  #     - libwacom
+  #     - libwacom-data
+  #   install:
+  #     - iptsd
+  #     - libwacom-surface
+  #     - libwacom-surface-data
 
   - type: rpm-ostree
     install:
