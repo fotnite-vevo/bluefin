@@ -5,5 +5,5 @@ set -oue pipefail
 dnf5 config-manager addrepo --from-repofile=https://pkg.surfacelinux.com/fedora/linux-surface.repo
 
 # Add surface kernel
-dnf5 -y remove kernel*
-dnf5 -y install --allowerasing kernel-surface iptsd libwacom-surface
+dnf5 -y install --allowerasing kernel-surface kernel-surface-devel libwacom-surface iptsd
+dnf5 -y remove kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra
