@@ -8,4 +8,4 @@ dnf5 config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-
 rpm-ostree install nvidia-driver akmod-nvidia
 
 # Disable nouveau and enable nvidia-drm
-rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
+#rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
