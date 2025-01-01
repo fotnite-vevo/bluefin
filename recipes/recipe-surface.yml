@@ -19,7 +19,6 @@ modules:
   - type: script
     scripts:
       - surface-kernel.sh
-      - nvidia.sh
 
   - type: rpm-ostree
     install:
