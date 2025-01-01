@@ -28,42 +28,39 @@ modules:
       - gnome-tour
       - solaar
 
-  - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - io.github.dvlv.boxbuddyrs
-        - org.fedoraproject.MediaWriter
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - org.gnome.baobab
-        - org.gnome.Calculator
-        - org.gnome.Calendar
-        - org.gnome.Characters
-        - org.gnome.clocks
-        - org.gnome.Connections
-        - org.gnome.Contacts
-        - org.gnome.DejaDup
-        - org.gnome.Papers
-        - com.mattjakeman.ExtensionManager
-        - org.gnome.FileRoller
-        - org.gnome.font-viewer
-        - org.gnome.Logs
-        - org.gnome.Loupe
-        - org.gnome.Maps
-        - org.gnome.NautilusPreviewer
-        - org.gnome.World.PikaBackup
-        - org.gnome.TextEditor
-        - org.gnome.Weather
-        - io.missioncenter.MissionCenter
-        - org.mozilla.firefox
-        - org.mozilla.Thunderbird
-        - org.gtk.Gtk3theme.adw-gtk3
-        - org.gtk.Gtk3theme.adw-gtk3-dark
+  - type: yafti
+    custom-flatpaks:
+      - BoxBuddy: io.github.dvlv.boxbuddyrs
+      - Fedora Media Writer: org.fedoraproject.MediaWriter
+      - Flatseal: com.github.tchx84.Flatseal
+      - Warehouse: io.github.flattool.Warehouse
+      - Disk Usage Analyzer: org.gnome.baobab
+      - Calculator: org.gnome.Calculator
+      - Calendar: org.gnome.Calendar
+      - Characters: org.gnome.Characters
+      - Clocks: org.gnome.clocks
+      - Connections: org.gnome.Connections
+      - Contacts: org.gnome.Contacts
+      - Backups: org.gnome.DejaDup
+      - Papers: org.gnome.Papers
+      - Extension Manager: com.mattjakeman.ExtensionManager
+      - File Roller: org.gnome.FileRoller
+      - Fonts: org.gnome.font-viewer
+      - Logs: org.gnome.Logs
+      - Image Viewer: org.gnome.Loupe
+      - Maps: org.gnome.Maps
+      - Sushi: org.gnome.NautilusPreviewer
+      - Pika Backup: org.gnome.World.PikaBackup
+      - Text Editor: org.gnome.TextEditor
+      - Weather: org.gnome.Weather
+      - Firefox: org.mozilla.firefox
+      - Thunderbird: org.mozilla.Thunderbird
+      - Adwaita GTK3: org.gtk.Gtk3theme.adw-gtk3
+      - Adwaita GTK3 Dark: org.gtk.Gtk3theme.adw-gtk3-dark
 
-        - io.github.celluloid_player.Celluloid
-        - com.github.neithern.g4music
-        - net.nokyan.Resources
+      - Celluloid: io.github.celluloid_player.Celluloid
+      - Gapless: com.github.neithern.g4music
+      - Resources: net.nokyan.Resources
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
