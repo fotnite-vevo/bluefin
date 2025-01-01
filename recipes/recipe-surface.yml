@@ -29,10 +29,6 @@ modules:
       - solaar
 
   - type: yafti
-    custom-flatpaks:
-      - Celluloid: io.github.celluloid_player.Celluloid
-      - Gapless: com.github.neithern.g4music
-      - Resources: net.nokyan.Resources
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
