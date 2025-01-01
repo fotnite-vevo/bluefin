@@ -5,9 +5,9 @@ set -oue pipefail
 dnf5 config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-nvidia.repo
 
 # Build nvidia kmod
-dnf5 install akmod-nvidia
+dnf5 -y install akmod-nvidia
 akmods --force
-dnf5 history undo last
+dnf5 -y history undo last
 
 # Install nvidia drivers
 rpm-ostree install /usr/src/akmods/nvidia-kmod.latest nvidia-driver nvidia-driver-cuda
