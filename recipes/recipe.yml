@@ -18,7 +18,7 @@ modules:
     repos:
       - https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_%OS_VERSION%/home:TheLocehiliosan:yadm.repo
       - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/dusansimic/themes/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/dusansimic/themes/repo/fedora-%OS_VERSION%/dusansimic-themes-fedora-%OS_VERSION%.repo
     install:
       - gnome-backgrounds-extras
       - neovim
