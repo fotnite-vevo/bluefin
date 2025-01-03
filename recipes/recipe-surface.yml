@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/fotnite-vevo/bluefin-surface
-name: bluefin-surface
+# image will be published to ghcr.io/fotnite-vevo/bluefin
+name: bluefin
 # description will be included in the image's metadata
 description: fotnite-vevo's personal Bluefin image.
 
@@ -11,12 +11,7 @@ image-version: stable # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - source: system/common
-        destination: /
-
-  - type: files
-    files:
-      - source: system/surface
+      - source: system
         destination: /
 
   - type: script
