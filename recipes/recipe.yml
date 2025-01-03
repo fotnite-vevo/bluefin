@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/fotnite-vevo/bluefin-surface
-name: bluefin-surface
+# image will be published to ghcr.io/fotnite-vevo/bluefin
+name: bluefin
 # description will be included in the image's metadata
 description: fotnite-vevo's personal Bluefin image.
 
@@ -14,19 +14,18 @@ modules:
       - source: system/common
         destination: /
 
-  - type: files
-    files:
-      - source: system/surface
-        destination: /
-
-  - type: script
-    scripts:
-      - surface-kernel.sh
-
   - type: rpm-ostree
+    repos:
+      - https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_%OS_VERSION%/home:TheLocehiliosan:yadm.repo
+      - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/dusansimic/themes/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
     install:
       - gnome-backgrounds-extras
       - neovim
+      - yadm
+      - zellij
+      - morewaita-icon-theme
+
     remove:
       - gnome-tour
       - solaar
