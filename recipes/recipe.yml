@@ -9,11 +9,6 @@ base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: stable # latest is also supported if you want new updates ASAP
 
 modules:
-  - type: files
-    files:
-      - source: system/common
-        destination: /
-
   - type: rpm-ostree
     repos:
       - https://download.opensuse.org/repositories/home:/TheLocehiliosan:/yadm/Fedora_%OS_VERSION%/home:TheLocehiliosan:yadm.repo
