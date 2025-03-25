@@ -14,9 +14,15 @@ modules:
       - source: system
         destination: /
 
-  - type: script
-    scripts:
-      - surface-kernel.sh
+  # - type: script
+  #   scripts:
+  #     - surface-kernel.sh
+
+  - type: akmods
+    base: surface
+    install:
+      - kvmfr
+      - v4l2loopback
 
   - type: rpm-ostree
     install:
@@ -29,3 +35,4 @@ modules:
   - type: yafti
 
   - type: signing
+
