@@ -43,7 +43,7 @@ modules:
       - gnome-tour
       - solaar
 
-  - type: yafti
+  # - type: yafti
 
   - type: signing
 
