@@ -14,6 +14,10 @@ modules:
       - source: system
         destination: /
 
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/hikariknight/looking-glass-kvmfr/repo/fedora-%OS_VERSION%/hikariknight-looking-glass-kvmfr-fedora-%OS_VERSION%.repo
+
   # - type: script
   #   scripts:
   #     - surface-kernel.sh
